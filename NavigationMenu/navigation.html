@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航菜单的制作</title>
+    <style>
+        *{margin:0;padding:0;font-size:14px}
+        ul{list-style: none;
+            width:500px;
+            height:50px;
+            font-size:0;
+            border-bottom: 5px solid #f60;
+        }
+        li{
+            display:inline-block;
+            font-size:12px;
+           // float:left;
+            text-align: center;
+            margin-top: 20px;
+        }
+        a{
+            height:30px;
+            line-height:30px;
+            width:100px;
+            background-color: aqua;
+            margin-bottom:1px;
+            /*padding-left:10px*/
+            /*text-indent:10px;*/
+           text-decoration: none;
+            display:inline-block;
+            border-radius:5px 5px 0 0;
+        }
+        a.active,a:hover{
+            background-color: #f60;
+            color:#fff;
+            height:40px;
+            margin-top:-10px;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+     <ul>
+          <li><a  class='active' href="#"><pre>首  页</pre></a></li>
+          <li><a href="#">新闻快讯</a></li>
+          <li><a href="#">产品展示</a></li>
+          <li><a href="#">售后服务</a></li>
+          <li><a href="#">联系我们</a></li>
+          <!--pre标签嵌套用于处理多个空格被当做单个空格的样子-->
+     </ul>
+     <script>
+         /*
+         两种方式实现纵向变横向，一种是向左浮动，另一种是将li设为inline-block（此时会多出些字符来，
+         需要将父元素font-size设置为0去掉多余字符）
+          */
+     </script>
+</body>
+</html>
